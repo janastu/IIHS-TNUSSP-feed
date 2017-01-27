@@ -1,0 +1,976 @@
+define sources {toi.feeds}
+  http://timesofindia.indiatimes.com/rssfeeds/-2128830821.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128819658.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128817995.cms
+  http://timesofindia.indiatimes.com/rssfeeds/878156304.cms
+  http://timesofindia.indiatimes.com/rssfeeds/2950623.cms
+  http://timesofindia.indiatimes.com/rssfeeds/3012544.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128816011.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128821153.cms
+  http://timesofindia.indiatimes.com/rssfeeds/3241488.cms
+  http://timesofindia.indiatimes.com/rssfeedsdefault.cms
+  http://timesofindia.indiatimes.com/rssfeeds/1945062111.cms
+  http://timesofindia.indiatimes.com/rssfeeds/3012535.cms
+  http://timesofindia.indiatimes.com/rssfeeds/30359534.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128682902.cms
+  http://timesofindia.indiatimes.com/rssfeeds/222023.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128838597.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128669051.cms
+  http://timesofindia.indiatimes.com/rssfeeds/222022.cms
+  http://timesofindia.indiatimes.com/rssfeeds/671208.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128839596.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128833038.cms
+  http://timesofindia.indiatimes.com/rssfeeds/1898408.cms
+  http://timesofindia.indiatimes.com/rssfeeds/1081479906.cms
+  http://timesofindia.indiatimes.com/rssfeeds/30359486.cms
+  http://newsrack.in/crawled.feeds/toi.rss.xml
+  http://timesofindia.indiatimes.com/rssfeeds/23785592.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128680634.cms
+  http://timesofindia.indiatimes.com/rssfeeds/12051364.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128932452.cms
+  http://timesofindia.indiatimes.com/rssfeeds/-2128816762.cms
+end
+
+define sources {telegraph.feeds} 
+  http://www.telegraphindia.com/feeds/rss.jsp?id=22
+  http://www.telegraphindia.com/feeds/rss.jsp?id=21
+  http://www.telegraphindia.com/feeds/rss.jsp?id=23
+  http://www.telegraphindia.com/feeds/rss.jsp?id=24
+  http://telegraphindia.com/feeds/rss.asp?id=4
+  http://telegraphindia.com/feeds/rss.asp?id=13
+  http://telegraphindia.com/feeds/rss.asp?id=6
+  http://telegraphindia.com/feeds/rss.asp?id=7
+  http://telegraphindia.com/feeds/rss.asp?id=5
+  http://telegraphindia.com/feeds/rss.asp?id=8
+  http://telegraphindia.com/feeds/rss.asp?id=3
+  http://telegraphindia.com/feeds/rss.asp?id=14
+  http://telegraphindia.com/feeds/rss.asp?id=9
+end
+
+define sources {businessStandard.feeds}
+  http://feeds.business-standard.com/rss/paper.xml
+  http://feeds.business-standard.com/rss/key.xml
+  http://feeds.business-standard.com/rss/2_0.xml
+  http://feeds.business-standard.com/rss/8_0.xml
+  http://feeds.business-standard.com/rss/7_0.xml
+  http://feeds.business-standard.com/rss/online.xml
+  http://feeds.business-standard.com/rss/3_0.xml
+  http://feeds.business-standard.com/rss/4_0.xml
+  http://feeds.business-standard.com/rss/1_0.xml
+  http://feeds.business-standard.com/rss/5_0.xml
+  http://feeds.business-standard.com/rss/6_0.xml
+end
+
+define sources {pti.feeds}
+  http://newsrack.in/crawled.feeds/pti.rss.xml
+end
+
+define sources {deccanHerald.feeds}
+  http://www.deccanherald.com/rss/158/international.html
+  http://www.deccanherald.com/rss/231/environment.html
+  http://www.deccanherald.com/rss/72/district.html
+  http://www.deccanherald.com/rss/71/state.html
+  http://www.deccanherald.com/rss/69/news.html
+  http://www.deccanherald.com/rss/73/city.html
+  http://www.deccanherald.com/rss/70/national.html
+end
+
+define sources {deccanChronicle.feeds}
+  http://www.deccanchronicle.com/rss#
+  http://cms.deccanchronicle.com/deccan/dcxml/
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=1
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=10
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=11
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=13
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=78
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=2
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=101
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=17
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=18
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=19
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=20
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=21
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=22
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=3
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=23
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=24
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=25
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=26
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=27
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=4
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=100
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=99
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=28
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=30
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=31
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=32
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=33
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=34
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=65
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=29
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=5
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=102
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=35
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=36
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=37
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=39
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=6
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=40
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=41
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=42
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=43
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=44
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=7
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=46
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=47
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=48
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=8
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=103
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=50
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=51
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=52
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=53
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=54
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=56
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=57
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=59
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=60
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=61
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=62
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=63
+  http://cms.deccanchronicle.com/deccan/dcipadxml/?sectionId=49
+end
+
+define sources {livemint.feeds}
+  http://www.livemint.com/SectionRssfeed.aspx?Id=77
+  http://www.livemint.com/SectionRssfeed.aspx?Id=59
+  http://www.livemint.com/SectionRssfeed.aspx?LN=Latestnews
+  http://www.livemint.com/SectionRssfeed.aspx?Id=88
+  http://www.livemint.com/SectionRssfeed.aspx?Id=58
+  http://www.livemint.com/SectionRssfeed.aspx?Id=87
+  http://www.livemint.com/SectionRssfeed.aspx?Id=92
+  http://www.livemint.com/SectionRssfeed.aspx?Id=63
+  http://www.livemint.com/SectionRssfeed.aspx?Id=79
+  http://www.livemint.com/SectionRssfeed.aspx?Id=52
+  http://www.livemint.com/SectionRssfeed.aspx?Id=78
+  http://www.livemint.com/SectionRssfeed.aspx?Id=89
+  http://www.livemint.com/SectionRssfeed.aspx?Id=91
+  http://www.livemint.com/SectionRssfeed.aspx?Id=99
+  http://www.livemint.com/SectionRssfeed.aspx?Id=60
+  http://www.livemint.com/SectionRssfeed.aspx?Id=51
+  http://www.livemint.com/SectionRssfeed.aspx?Id=100
+  http://www.livemint.com/SectionRssfeed.aspx?Id=95
+  http://www.livemint.com/SectionRssfeed.aspx?Id=96
+  http://www.livemint.com/SectionRssfeed.aspx?Id=57
+  http://www.livemint.com/SectionRssfeed.aspx?Id=53
+  http://www.livemint.com/SectionRssfeed.aspx?Id=101
+  http://www.livemint.com/SectionRssfeed.aspx?Id=90
+  http://www.livemint.com/SectionRssfeed.aspx?Id=54
+  http://www.livemint.com/SectionRssfeed.aspx?Id=76
+  http://www.livemint.com/SectionRssfeed.aspx?Id=98
+  http://www.livemint.com/SectionRssfeed.aspx?Id=94
+  http://www.livemint.com/SectionRssfeed.aspx?Id=97
+  http://www.livemint.com/SectionRssfeed.aspx?Id=56
+  http://www.livemint.com/SectionRssfeed.aspx?Id=102
+end
+
+define sources {centralChronicle.feeds}
+  http://www.centralchronicle.com/national-news/feed
+  http://www.centralchronicle.com/technology-news/feed
+  http://www.centralchronicle.com/business-news/feed
+  http://www.centralchronicle.com/editorial/feed
+  http://www.centralchronicle.com/bhopal-news/feed
+  http://www.centralchronicle.com/feed
+  http://www.centralchronicle.com/madhya-pradesh-news/feed
+  http://newsrack.in/crawled.feeds/cc.rss.xml
+end
+
+define sources {midday.feeds}
+  http://feeds.mid-day.com/mdnews/mumbai
+  http://feeds.mid-day.com/mdnews/pune
+  http://feeds.mid-day.com/mdnews/national
+  http://feeds.mid-day.com/mdopinion
+  http://feeds.mid-day.com/mdnews/bangalore
+  http://feeds.mid-day.com/mdopinion/columns
+  http://feeds.mid-day.com/mdnews/delhi
+  http://www.mid-day.com/Resources/midday/rss/news.xml
+  http://www.mid-day.com/Resources/midday/rss/news-national.xml
+  http://www.mid-day.com/Resources/midday/rss/news-mumbai.xml
+  http://www.mid-day.com/Resources/midday/rss/news-international.xml
+  http://www.mid-day.com/Resources/midday/rss/news-pune.xml
+  http://www.mid-day.com/Resources/midday/rss/news-hatke.xml
+  http://www.mid-day.com/Resources/midday/rss/news-crime.xml
+  http://www.mid-day.com/Resources/midday/rss/news-columnists.xml
+  http://www.mid-day.com/Resources/midday/rss/sports.xml
+  http://www.mid-day.com/Resources/midday/rss/sports-cricket.xml
+  http://www.mid-day.com/Resources/midday/rss/sports-football.xml
+  http://www.mid-day.com/Resources/midday/rss/sports-tennis.xml
+  http://www.mid-day.com/Resources/midday/rss/sports-motor-sports.xml
+  http://www.mid-day.com/Resources/midday/rss/sports-local-sports.xml
+  http://www.mid-day.com/Resources/midday/rss/sports-other-sports.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-food.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-travel.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-relationships.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-dear-diana.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-sunday-mid-day.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-technology.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-health.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-culture.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-people.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-fashion.xml
+  http://www.mid-day.com/Resources/midday/rss/life-and-style-specials.xml
+  http://www.mid-day.com/Resources/midday/rss/entertainment.xml
+  http://www.mid-day.com/Resources/midday/rss/entertainment-bollywood.xml
+  http://www.mid-day.com/Resources/midday/rss/entertainment-hollywood.xml
+  http://www.mid-day.com/Resources/midday/rss/entertainment-television.xml
+  http://www.mid-day.com/Resources/midday/rss/entertainment-regional.xml
+  http://www.mid-day.com/Resources/midday/rss/entertainment-reviews.xml
+  http://www.mid-day.com/Resources/midday/rss/mumbai.xml
+  http://www.mid-day.com/Resources/midday/rss/mumbai-thane.xml
+  http://www.mid-day.com/Resources/midday/rss/mumbai-navi-mumbai.xml
+  http://www.mid-day.com/Resources/midday/rss/mumbai-north-mumbai.xml
+  http://www.mid-day.com/Resources/midday/rss/mumbai-east-mumbai.xml
+  http://www.mid-day.com/Resources/midday/rss/mumbai-central-mumbai.xml
+  http://www.mid-day.com/Resources/midday/rss/mumbai-western-suburbs.xml
+  http://www.mid-day.com/Resources/midday/rss/mumbai-south-mumbai.xml
+end
+
+define sources {fpj.feeds}
+  http://freepressjournal.in/?cat=1225&feed=rss2
+  http://freepressjournal.in/?cat=1140&feed=rss2
+  http://freepressjournal.in/?cat=1142&feed=rss2
+  http://freepressjournal.in/?cat=1239&feed=rss2
+  http://freepressjournal.in/?cat=1234&feed=rss2
+  http://freepressjournal.in/?cat=1238&feed=rss2
+  http://freepressjournal.in/?cat=1235&feed=rss2
+  http://freepressjournal.in/?cat=1237&feed=rss2
+  http://freepressjournal.in/?cat=1307&feed=rss2
+  http://freepressjournal.in/?cat=1308&feed=rss2
+  http://freepressjournal.in/?cat=1236&feed=rss2
+  http://freepressjournal.in/?cat=1240&feed=rss2
+  http://freepressjournal.in/?cat=1231&feed=rss2
+  http://freepressjournal.in/?cat=1256&feed=rss2
+  http://freepressjournal.in/?cat=1209&feed=rss2
+  http://freepressjournal.in/?cat=1155&feed=rss2
+  http://freepressjournal.in/?cat=1151&feed=rss2
+  http://freepressjournal.in/?cat=1228&feed=rss2
+  http://freepressjournal.in/?cat=1255&feed=rss2
+  http://freepressjournal.in/?cat=1230&feed=rss2
+  http://freepressjournal.in/?cat=1229&feed=rss2
+  http://newsrack.in/crawled.feeds/fe.rss.xml
+end
+
+define sources {economicsTimes.feeds}
+  http://economictimes.indiatimes.com/rssfeeds/897228639.cms
+  http://economictimes.indiatimes.com/rssfeeds/25466841.cms
+  http://economictimes.indiatimes.com/rssfeeds/13356984.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358859.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358807.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357396.cms
+  http://economictimes.indiatimes.com/rssfeeds/1286551815.cms
+  http://economictimes.indiatimes.com/rssfeeds/344531568.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358854.cms
+  http://economictimes.indiatimes.com/rssfeeds/1135557951.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357555.cms
+  http://economictimes.indiatimes.com/rssfeeds/14655708.cms
+  http://economictimes.indiatimes.com/rssfeeds/12872390.cms
+  http://economictimes.indiatimes.com/rssfeeds/13359675.cms
+  http://economictimes.indiatimes.com/rssfeeds/575221.cms
+  http://economictimes.indiatimes.com/rssfeeds/13354027.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358319.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358090.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358817.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358070.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357077.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358311.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358793.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358361.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357549.cms
+  http://economictimes.indiatimes.com/rssfeeds/13359633.cms
+  http://economictimes.indiatimes.com/rssfeeds/2026181286.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357077.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357085.cms
+  http://economictimes.indiatimes.com/rssfeeds/13356992.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357410.cms
+  http://economictimes.indiatimes.com/rssfeeds/1200949414.cms
+  http://economictimes.indiatimes.com/rssfeeds/1202099874.cms
+  http://economictimes.indiatimes.com/rssfeeds/1106944246.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357919.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358368.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357719.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358057.cms
+  http://economictimes.indiatimes.com/rssfeeds/13357699.cms
+  http://economictimes.indiatimes.com/rssfeeds/40274504.cms
+  http://economictimes.indiatimes.com/rssfeeds/129134.cms
+  http://economictimes.indiatimes.com/rssfeeds/26865660.cms
+  http://economictimes.indiatimes.com/rssfeeds/287662.cms
+  http://economictimes.indiatimes.com/rssfeeds/121385957.cms
+  http://economictimes.indiatimes.com/rssfeeds/107115.cms
+  http://economictimes.indiatimes.com/rssfeeds/542990.cms
+  http://economictimes.indiatimes.com/rssfeeds/14655678.cms
+  http://economictimes.indiatimes.com/rssfeeds/1107225967.cms
+  http://economictimes.indiatimes.com/rssfeeds/13358304.cms
+end
+
+define sources {hindustanTimes.feeds}
+  http://feeds.hindustantimes.com/HT-HomePage-TopStories
+  http://feeds.hindustantimes.com/HT-BusinessSectionpage-Corporate
+  http://feeds.hindustantimes.com/HT-Cricket-Columns
+  http://feeds.hindustantimes.com/HT-ViewsSectionpage-Topstories
+  http://feeds.hindustantimes.com/HT-BusinessSectionpage-Interviews
+  http://feeds.hindustantimes.com/HT-WorldSectionPage-Topstories
+  http://feeds.hindustantimes.com/HT-BusinessSectionpage-TopStories
+  http://feeds.hindustantimes.com/HT-BusinessSectionpage-Economy
+  http://feeds.hindustantimes.com/HT-BusinessSectionpage-Markets
+  http://feeds.hindustantimes.com/HT-NewsSectionPage-Topstories
+  http://feeds.hindustantimes.com/HT-Homepage-LifestyleNews
+  http://feeds.hindustantimes.com/HT-IndiansAbroad-Topstories
+  http://feeds.hindustantimes.com/HT-Cricket-TopStories
+  http://feeds.hindustantimes.com/HT-IndiaSectionPage-Topstories
+  http://feeds.hindustantimes.com/HT-ViewsInterviewsSectionPage-TopStories
+  http://feeds.hindustantimes.com/HT-ViewsSectionpage-Edits
+  http://feeds.hindustantimes.com/HT-ViewsColumnsSectionPage-TopColumns
+end
+
+define sources {indianExpress.feeds}
+  http://indianexpress.com/section/sports/feed/
+  http://indianexpress.com/section/world/feed/
+  http://indianexpress.com/section/india/feed/
+  http://indianexpress.com/print/front-page/feed/
+  http://indianexpress.com/section/lifestyle/feed/
+  http://indianexpress.com/section/world/asia/feed/
+  http://indianexpress.com/section/opinion/editorials/feed/
+  http://indianexpress.com/section/sports/cricket/feed/
+  http://indianexpress.com/section/lifestyle/health/feed/
+  http://indianexpress.com/section/india/crime/feed/
+  http://indianexpress.com/section/opinion/feed/
+  http://www.indianexpress.com/section/cities/delhi/feed/
+  http://www.indianexpress.com/section/cities/lucknow/feed/
+  http://www.indianexpress.com/section/cities/pune/feed/
+  http://indianexpress.com/section/cities/chandigarh/feed/
+  http://indianexpress.com/section/cities/mumbai/feed/
+  http://indianexpress.com/section/cities/kolkata/feed/
+  http://indianexpress.com/section/cities/ludhiana/feed/
+  http://indianexpress.com/section/lifestyle/life-style/feed/
+  http://indianexpress.com/section/world/europe/feed/
+  http://indianexpress.com/section/sports/football/feed/
+  http://indianexpress.com/section/india/education/feed/
+  http://indianexpress.com/section/lifestyle/food/feed/
+  http://indianexpress.com/print/national-network/feed/
+  http://indianexpress.com/section/sports/tennis/feed/
+  http://indianexpress.com/section/india/maharashtra/feed/
+  http://indianexpress.com/section/lifestyle/fashion/feed/
+  http://indianexpress.com/section/entertainment/feed/
+  http://indianexpress.com/section/world/indians-abroad/feed/
+  http://indianexpress.com/section/india/uttar-pradesh/feed/
+  http://indianexpress.com/section/technology/feed/
+  http://indianexpress.com/print/eye/feed/
+  http://indianexpress.com/section/sports/motor-sport/feed/
+  http://indianexpress.com/section/india/politics/feed/
+  http://indianexpress.com/section/sports/golf/feed/
+  http://indianexpress.com/section/india/regional-india/feed/
+  http://indianexpress.com/section/world/climate-change/feed/
+  http://indianexpress.com/section/sports/hockey/feed/
+  http://indianexpress.com/section/sports/sport-others/feed/
+  http://indianexpress.com/section/india/west-bengal/feed/
+  http://indianexpress.com/section/india/punjab-and-haryana/feed/
+  http://indianexpress.com/section/opinion/letters-to-editor/feed/
+  http://indianexpress.com/print/rxpress/feed/
+  http://indianexpress.com/print/most-powerful-indians/feed/
+  http://indianexpress.com/print/from-the-fields/feed/
+  http://indianexpress.com/print/delhi-confidential/feed/
+  http://indianexpress.com/section/entertainment/movie-review/feed/
+  http://indianexpress.com/section/opinion/columns/feed/
+  http://indianexpress.com/print/reviews-books/feed/
+  http://indianexpress.com/print/reviews-dvd/feed/
+  http://indianexpress.com/print/reviews-music/feed/
+  http://indianexpress.com/print/estates/feed/
+  http://indianexpress.com/section/entertainment/regional/feed/
+  http://indianexpress.com/section/entertainment/hollywood/feed/
+  http://indianexpress.com/section/entertainment/bollywood/feed/
+  http://indianexpress.com/print/express-adda/feed/
+  http://indianexpress.com/topic/the-idea-exchange/feed/
+  http://indianexpress.com/picture-gallery-section/entertainment-gallery/feed/
+  http://indianexpress.com/picture-gallery-section/sports-gallery/feed/
+  http://indianexpress.com/picture-gallery-section/picture-gallery-others/feed/
+  http://indianexpress.com/picture-gallery-section/lifestyle-gallery/feed/
+  http://indianexpress.com/picture-gallery-section/photo-archives/feed/
+  http://indianexpress.com/photo-story-section/auto-travel/feed/
+  http://indianexpress.com/photo-story-section/entertainment/feed/
+  http://indianexpress.com/photo-story-section/india/feed/
+  http://indianexpress.com/photo-story-section/india-politics/feed/
+  http://indianexpress.com/photo-story-section/lifestyle/feed/
+  http://indianexpress.com/photo-story-section/sports/feed/
+  http://indianexpress.com/photo-story-section/technology/feed/
+  http://indianexpress.com/photo-story-section/world/feed/
+end
+
+define sources {newIndianExpress.feeds}
+  http://newindianexpress.com/?widgetName=rssfeed&widgetId=276210&getXmlFeed=true
+  http://newindianexpress.com/states/?widgetName=rssfeed&widgetId=276210&getXmlFeed=true
+  http://newindianexpress.com/states/karnataka/?widgetName=rssfeed&widgetId=534391&getXmlFeed=true
+  http://newindianexpress.com/business/?widgetName=rssfeed&widgetId=276210&getXmlFeed=true
+  http://newindianexpress.com/cities/?widgetName=rssfeed&widgetId=276210&getXmlFeed=true
+  http://newindianexpress.com/thesundaystandard/?widgetName=rssfeed&widgetId=276210&getXmlFeed=true
+  http://newindianexpress.com/states/odisha/?widgetName=rssfeed&widgetId=534391&getXmlFeed=true
+  http://newindianexpress.com/nation/?widgetName=rssfeed&widgetId=276210&getXmlFeed=true
+  http://newindianexpress.com/states/kerala/?widgetName=rssfeed&widgetId=534391&getXmlFeed=true
+  http://newindianexpress.com/top_news/?widgetName=rssfeed&widgetId=534391&getXmlFeed=true
+  http://newindianexpress.com/magazine/?widgetName=rssfeed&widgetId=276210&getXmlFeed=true
+  http://newindianexpress.com/education/?widgetName=rssfeed&widgetId=276210&getXmlFeed=true
+  http://newindianexpress.com/states/andhra_pradesh/?widgetName=rssfeed&widgetId=534391&getXmlFeed=true
+  http://newindianexpress.com/states/tamil_nadu/?widgetName=rssfeed&widgetId=534391&getXmlFeed=true
+end
+
+define sources {financialExpress.feeds}
+  http://syndication.financialexpress.com/rss/95/companies.xml
+  http://syndication.financialexpress.com/rss/100/politics.xml
+  http://syndication.financialexpress.com/rss/379/insurance.xml
+  http://syndication.financialexpress.com/rss/385/travel-&-tourism.xml
+  http://syndication.financialexpress.com/rss/378/infrastructure.xml
+  http://syndication.financialexpress.com/rss/382/media.xml
+  http://syndication.financialexpress.com/rss/latest-news.xml
+  http://syndication.financialexpress.com/rss/384/real-estate.xml
+  http://syndication.financialexpress.com/rss/349/banking-&-finance.xml
+  http://syndication.financialexpress.com/rss/98/world-news.xml
+  http://syndication.financialexpress.com/rss/626/business-wire.xml
+  http://syndication.financialexpress.com/rss/372/automobiles.xml
+  http://syndication.financialexpress.com/rss/103/retail.xml
+  http://syndication.financialexpress.com/rss/376/health-&-pharma.xml
+  http://syndication.financialexpress.com/rss/380/jobs.xml
+  http://syndication.financialexpress.com/rss/101/telecom.xml
+  http://syndication.financialexpress.com/rss/375/commodities.xml
+  http://syndication.financialexpress.com/rss/96/markets.xml
+  http://syndication.financialexpress.com/rss/377/infotech.xml
+  http://syndication.financialexpress.com/rss/383/power.xml
+  http://syndication.financialexpress.com/rss/97/economy.xml
+end
+
+define sources {theHinduBuisnessLine.feeds}
+  http://www.thehindubusinessline.com/?service=rss
+  http://www.thehindubusinessline.com/news/?service=rss
+  http://www.thehindubusinessline.com/news/national/?service=rss
+  http://www.thehindubusinessline.com/news/science/?service=rss
+  http://www.thehindubusinessline.com/news/sports/?service=rss
+  http://www.thehindubusinessline.com/news/world/?service=rss
+  http://www.thehindubusinessline.com/news/variety/?service=rss
+  http://www.thehindubusinessline.com/news/education/?service=rss
+  http://www.thehindubusinessline.com/news/real-estate/?service=rss
+  http://www.thehindubusinessline.com/cities4climate/?service=rss
+  http://www.thehindubusinessline.com/companies/announcements/?service=rss
+  http://www.thehindubusinessline.com/money-and-banking/?service=rss
+  http://www.thehindubusinessline.com/economy/?service=rss
+  http://www.thehindubusinessline.com/economy/agri-business/?service=rss
+  http://www.thehindubusinessline.com/economy/logistics/?service=rss
+  http://www.thehindubusinessline.com/economy/macro-economy/?service=rss
+  http://www.thehindubusinessline.com/economy/policy/?service=rss
+  http://www.thehindubusinessline.com/info-tech/?service=rss
+  http://www.thehindubusinessline.com/info-tech/social-media/?service=rss
+  http://www.thehindubusinessline.com/info-tech/computers-and-laptops/?service=rss
+  http://www.thehindubusinessline.com/info-tech/mobiles-tablets/?service=rss
+  http://www.thehindubusinessline.com/info-tech/other-gadgets/?service=rss
+  http://www.thehindubusinessline.com/opinion/columns/?service=rss
+  http://www.thehindubusinessline.com/opinion/letters/?service=rss
+  http://www.thehindubusinessline.com/opinion/books/?service=rss
+  http://www.thehindubusinessline.com/blogs/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-ajvinayak/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-aditinigam/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-aeshadatta/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-ashwiniphadnis/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-bbaskar/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-bijoybharathan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-bindumenon/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-divyapushkarna/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-georgeverghese/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-indirabalaji/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-jsrinivasan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-jacob-thomas/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-ksbadrinarayanan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-mrsubramani/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-mahanandabohidar/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-mahimajain/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-meerasiva/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-mirzamohammedalikhan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-mythilirajkumar/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-nramakrishnan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-navadhapandey/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-niharikam/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-pradiptijayaram/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-rdinakaran/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-rknair/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-rsrinivasan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-rasheedabhagat/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-richamishra/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-smadhavan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-sronendrasingh/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-sandhya-rao/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-satyanarayaniyer/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-sayantichakraborty/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-shishirsinha/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-siddharthapsaikia/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-sravanthic/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-stanly/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-terajasimhan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-ttsrinath/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-tanyathomas/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-thomaskthomas/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-tirnaray/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-tuniacherian/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-vanithasrinivasan/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-vinaykamath/?service=rss
+  http://www.thehindubusinessline.com/blogs/blog-vinsonkurian/?service=rss
+  http://www.thehindubusinessline.com/specials/?service=rss
+  http://www.thehindubusinessline.com/specials/auto-focus/?service=rss
+  http://www.thehindubusinessline.com/specials/clean-tech/?service=rss
+  http://www.thehindubusinessline.com/specials/emerging-entrepreneurs/?service=rss
+  http://www.thehindubusinessline.com/specials/flight-plan/?service=rss
+  http://www.thehindubusinessline.com/specials/india-file/?service=rss
+  http://www.thehindubusinessline.com/specials/india-interior/?service=rss
+  http://www.thehindubusinessline.com/specials/pulse/?service=rss
+  http://www.thehindubusinessline.com/specials/technophile/?service=rss
+  http://www.thehindubusinessline.com/specials/luxe/?service=rss
+  http://www.thehindubusinessline.com/specials/new-manager/?service=rss
+  http://www.thehindubusinessline.com/portfolio/?service=rss
+  http://www.thehindubusinessline.com/portfolio/beyond-stocks/?service=rss
+  http://www.thehindubusinessline.com/portfolio/macro-view/?service=rss
+  http://www.thehindubusinessline.com/portfolio/net-worth/?service=rss
+  http://www.thehindubusinessline.com/portfolio/real-assets/?service=rss
+  http://www.thehindubusinessline.com/portfolio/your-money/?service=rss
+  http://www.thehindubusinessline.com/portfolio/firm-calls/?service=rss
+  http://www.thehindubusinessline.com/portfolio/mutual-funds/?service=rss
+  http://www.thehindubusinessline.com/portfolio/technically/?service=rss
+  http://www.thehindubusinessline.com/portfolio/people/?service=rss
+  http://www.thehindubusinessline.com/catalyst/?service=rss
+  http://www.thehindubusinessline.com/blink/?service=rss
+  http://www.thehindubusinessline.com/companies/announcements/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/interiors/?service=rss
+  http://www.thehindubusinessline.com/features/investment-world/market-strategy/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/luxury-and-fashion/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/wines-and-malts/?service=rss
+  http://www.thehindubusinessline.com/features/brandline/?service=rss
+  http://www.thehindubusinessline.com/opinion/columns/?service=rss
+  http://www.thehindubusinessline.com/features/eworld/?service=rss
+  http://www.thehindubusinessline.com/features/?service=rss
+  http://www.thehindubusinessline.com/companies/announcements/disclosures/?service=rss
+  http://www.thehindubusinessline.com/features/investment-world/market-watch/?service=rss
+  http://www.thehindubusinessline.com/industry-and-economy/agri-biz/?service=rss
+  http://www.thehindubusinessline.com/markets/gold/?service=rss
+  http://www.thehindubusinessline.com/features/mentor/?service=rss
+  http://www.thehindubusinessline.com/industry-and-economy/?service=rss
+  http://www.thehindubusinessline.com/industry-and-economy/logistics/?service=rss
+  http://www.thehindubusinessline.com/features/investment-world/?service=rss
+  http://www.thehindubusinessline.com/industry-and-economy/info-tech/?service=rss
+  http://www.thehindubusinessline.com/companies/announcements/others/?service=rss
+  http://www.thehindubusinessline.com/opinion/editorial/?service=rss
+  http://www.thehindubusinessline.com/markets/stock-markets/?service=rss
+  http://www.thehindubusinessline.com/markets/todays-pick/?service=rss
+  http://www.thehindubusinessline.com/markets/commodities/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/?service=rss
+  http://www.thehindubusinessline.com/features/investment-world/mutual-funds/?service=rss
+  http://www.thehindubusinessline.com/opinion/cartoons/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/gaming/?service=rss
+  http://www.thehindubusinessline.com/opinion/letters/?service=rss
+  http://www.thehindubusinessline.com/opinion/?service=rss
+  http://www.thehindubusinessline.com/companies/announcements/results/?service=rss
+  http://www.thehindubusinessline.com/markets/?service=rss
+  http://www.thehindubusinessline.com/features/life/?service=rss
+  http://www.thehindubusinessline.com/industry-and-economy/shipping-news/?service=rss
+  http://www.thehindubusinessline.com/features/investment-world/young-investor/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/other-gadgets/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/automobiles/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/watches-and-jewellery/?service=rss
+  http://www.thehindubusinessline.com/features/newmanager/?service=rss
+  http://www.thehindubusinessline.com/features/smartbuy/laptops/?service=rss
+  http://www.thehindubusinessline.com/companies/?service=rss
+end
+
+define sources {tribune.feeds} 
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=7
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=8
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=2
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=39
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=40
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=44
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=43
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=41
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=42
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=45
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=3
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=83
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=88
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=85
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=87
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=86
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=84
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=4
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=89
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=94
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=91
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=93
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=92
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=90
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=5
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=95
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=100
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=97
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=99
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=98
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=96
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=6
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=101
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=106
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=103
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=105
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=104
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=102
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=177
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=11
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=20
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=21
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=14
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=16
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=22
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=15
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=12
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=9
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=10
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=13
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=24
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=27
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=26
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=32
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=33
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=19
+  http://www.tribuneindia.com/rss/feed.aspx?cat_id=18
+  http://www.tribuneindia.com/rss/rss.aspx#
+end
+
+define sources {dna.feeds}
+  http://www.dnaindia.com/syndication/rss,catID-0.xml
+  http://www.dnaindia.com/syndication/rss_topnews.xml
+  http://www.dnaindia.com/syndication/rss_popular.xml
+  http://www.dnaindia.com/syndication/rss_column.xml
+  http://www.dnaindia.com/syndication/rss,catID-1.xml
+  http://www.dnaindia.com/syndication/rss,catID-2.xml
+  http://www.dnaindia.com/syndication/rss,catID-4.xml
+  http://www.dnaindia.com/syndication/rss,catID-19.xml
+  http://newsrack.in/crawled.feeds/dna.blr.rss.xml
+  http://www.dnaindia.com/syndication/rss,catid-1058783.xml
+  http://www.dnaindia.com/syndication/rss,catid-1148452.xml
+  http://www.dnaindia.com/syndication/rss,catid-1122228.xml
+  http://www.dnaindia.com/syndication/rss,catid-5.xml
+end
+
+define sources {greaterKashmir.feeds}
+  http://www.greaterkashmir.com/feed.aspx?cat_id=2
+  http://www.greaterkashmir.com/feed.aspx?cat_id=3
+  http://www.greaterkashmir.com/feed.aspx?cat_id=4
+  http://www.greaterkashmir.com/feed.aspx?cat_id=31
+  http://www.greaterkashmir.com/feed.aspx?cat_id=10
+  http://www.greaterkashmir.com/feed.aspx?cat_id=23
+  http://www.greaterkashmir.com/feed.aspx?cat_id=32
+  http://www.greaterkashmir.com/feed.aspx?cat_id=9
+  http://www.greaterkashmir.com/feed.aspx?cat_id=7
+  http://www.greaterkashmir.com/feed.aspx?cat_id=8
+  http://www.greaterkashmir.com/feed.aspx?cat_id=26
+  http://www.greaterkashmir.com/feed.aspx?cat_id=12
+  http://www.greaterkashmir.com/feed.aspx?cat_id=46
+  http://www.greaterkashmir.com/rss.aspx
+end
+
+define sources {hans.feeds}
+  http://rssa.at/thehansindia3899?referer=&format=xml
+  http://rssa.at/thehansindia3900?referer=&format=xml
+  http://rssa.at/thehansindia3901?referer=&format=xml
+  http://rssa.at/thehansindia3902?referer=&format=xml
+  http://rssa.at/thehansindia3903?referer=&format=xml
+  http://rssa.at/thehansindia3904?referer=&format=xml
+  http://rssa.at/thehansindia3905?referer=&format=xml
+  http://rssa.at/thehansindia3908?referer=&format=xml
+  http://rssa.at/thehansindia3909?referer=&format=xml
+  http://rssa.at/thehansindia3910?referer=&format=xml
+  http://rssa.at/thehansindia3911?referer=&format=xml
+  http://rssa.at/thehansindia3912?referer=&format=xml
+  http://rssa.at/thehansindia3913?referer=&format=xml
+  http://rssa.at/thehansindia3914?referer=&format=xml
+  http://rssa.at/thehansindia3915?referer=&format=xml
+  http://rssa.at/thehansindia3916?referer=&format=xml
+  http://rssa.at/thehansindia3917?referer=&format=xml
+  http://rssa.at/thehansindia3918?referer=&format=xml
+  http://rssa.at/thehansindia3919?referer=&format=xml
+  http://rssa.at/thehansindia3920?referer=&format=xml
+  http://rssa.at/thehansindia3922?referer=&format=xml
+  http://rssa.at/thehansindia3930?referer=&format=xml
+  http://rssa.at/thehansindia3940?referer=&format=xml
+end 
+
+define sources {newsToday.feeds}
+  http://rssa.at/newstodaynet?referer=&format=xml
+  http://rssa.at/newstodaynet3928?referer=&format=xml
+end
+
+define sources {morungExpress.feeds}
+  http://rssa.at/morungexpress?referer=&format=xml
+  http://rssa.at/morungexpress3952?referer=&format=xml
+end 
+
+define sources {sangaiExpress.feeds}
+  http://rssa.at/thesangaiexpress?referer=&format=xml
+  http://rssa.at/thesangaiexpress3957?referer=&format=xml
+  http://rssa.at/thesangaiexpress3959?referer=&format=xml
+end
+
+define sources {arunachalFront.feeds}
+  http://rssa.at/dnaindia3964?referer=&format=xml
+  http://rssa.at/dnaindia3965?referer=&format=xml
+  http://rssa.at/dnaindia3967?referer=&format=xml
+end
+
+define sources {andamanSheekha.feeds}
+  http://rssa.at/dnaindia3958?referer=&format=xml
+  http://rssa.at/dnaindia3960?referer=&format=xml
+end
+
+define sources {andamanChronicle.feeds}
+  http://rssa.at/andamanchronicle?referer=&format=xml
+  http://rssa.at/andamanchronicle3944?referer=&format=xml
+end
+
+define sources {indiaTimes.feeds}
+  http://info.indiatimes.com/rss/
+  http://info.indiatimes.com/rss/#top
+end
+
+define sources {bangaloreMirror.feeds}
+  http://rssa.at/bangaloremirror?referer=&format=xml
+  http://rssa.at/bangaloremirror3948?referer=&format=xml
+  http://rssa.at/bangaloremirror3951?referer=&format=xml
+end
+
+define sources {navHindTimes.feeds}
+  http://www.navhindtimes.in/index.php?format=feed&type=rss
+end
+
+define sources {hitavada.feeds}
+  http://rssa.at/thehitavada?referer=&format=xml
+end
+
+define sources {assamTribune.feeds}
+  http://newsrack.in/crawled.feeds/at.rss.xml
+end
+
+define sources {asiaAge.feeds}
+  http://feeds.feedburner.com/AsianAge
+end
+
+define sources {excelsior.feeds}
+  http://rssa.at/dailyexcelsior?referer=&format=xml
+end
+
+define sources {orissaPost.feeds}
+  http://rssa.at/orissapost3961?referer=&format=xml
+  http://rssa.at/orissapost3962?referer=&format=xml
+end
+
+define sources {imphalFreePress.feeds}
+  http://rssa.at/ifp?referer=&format=xml
+end
+
+define sources {shillongTimes.feeds}
+  http://feeds.feedburner.com/TheShillongTimes
+end
+
+define sources {ahmedabadMirror.feeds}
+  http://rssa.at/ahmedabadmirror3941?referer=&format=xml
+end
+
+define sources {oHeraldo.feeds}
+  http://rssa.at/www3963?referer=&format=xml
+end
+
+define sources {puneMirror.feeds}
+  http://rssa.at/punemirror?referer=&format=xml
+  http://rssa.at/punemirror3924?referer=&format=xml
+end
+
+def sources {hindu.feeds}
+  http://www.thehindu.com/?service=rss
+  http://www.thehindu.com/news/?service=rss
+  http://www.thehindu.com/news/national/?service=rss
+  http://www.thehindu.com/news/international/?service=rss
+end
+
+define sources {pioneer.feeds}
+  http://rssa.at/dailypioneer?referer=&format=xml
+  http://rssa.at/dailypioneer3971?referer=&format=xml
+  http://rssa.at/dailypioneer3972?referer=&format=xml
+  http://rssa.at/dailypioneer3973?referer=&format=xml
+  http://rssa.at/dailypioneer3974?referer=&format=xml
+end
+
+define sources {iihs_english_news_sources_v2}
+  {toi.feeds}, {telegraph.feeds}, {businessStandard.feeds}, {pti.feeds}, {livemint.feeds}, {deccanHerald.feeds}, {centralChronicle.feeds}, {fpj.feeds}, {economicsTimes.feeds}, {midday.feeds}, {hindustanTimes.feeds}, {newIndianExpress.feeds}, {financialExpress.feeds}, {theHinduBuisnessLine.feeds}, {navHindTimes.feeds}, {assamTribune.feeds}, {tribune.feeds}, {asiaAge.feeds}, {indianExpress.feeds}, {greaterKashmir.feeds}, {shillongTimes.feeds}, {dna.feeds}, {deccanChronicle.feeds}, {hans.feeds}, {imphalFreePress.feeds}, {newsToday.feeds}, {morungExpress.feeds}, {sangaiExpress.feeds}, {arunachalFront.feeds}, {hitavada.feeds}, {excelsior.feeds}, {orissaPost.feeds}, {andamanSheekha.feeds}, {andamanChronicle.feeds}, {bangaloreMirror.feeds}, {indiaTimes.feeds}, {ahmedabadMirror.feeds}, {oHeraldo.feeds}, {puneMirror.feeds}, {hindu.feeds}, {pioneer.feeds}
+end
+
+
+(*English Magazine feeds*)
+define sources {downToEarth.feeds}
+  http://www.downtoearth.org.in/rss/all
+  http://www.downtoearth.org.in/rss/africa
+  http://www.downtoearth.org.in/rss/agriculture
+  http://www.downtoearth.org.in/rss/air
+  http://www.downtoearth.org.in/rss/climate-change
+  http://www.downtoearth.org.in/rss/cop-21
+  http://www.downtoearth.org.in/rss/economy
+  http://www.downtoearth.org.in/rss/energy
+  http://www.downtoearth.org.in/rss/environment
+  http://www.downtoearth.org.in/rss/food
+  http://www.downtoearth.org.in/rss/forests
+  http://www.downtoearth.org.in/rss/governance
+  http://www.downtoearth.org.in/rss/health
+  http://www.downtoearth.org.in/rss/india
+  http://www.downtoearth.org.in/rss/lifestyle
+  http://www.downtoearth.org.in/rss/mining
+  http://www.downtoearth.org.in/rss/natural-disasters
+  http://www.downtoearth.org.in/rss/science-technology
+  http://www.downtoearth.org.in/rss/special-tags
+  http://www.downtoearth.org.in/rss/urbanisation
+  http://www.downtoearth.org.in/rss/waste
+  http://www.downtoearth.org.in/rss/water
+  http://www.downtoearth.org.in/rss/wildlife-biodiversity
+  http://www.downtoearth.org.in/rss/world
+end
+
+define sources {outlook.feeds}
+  http://outlookindia.com/rss/section/Society
+  http://outlookindia.com/rss/section/national
+  http://outlookindia.com/rss/section/international
+  http://outlookindia.com/rss/section/ae
+  http://outlookindia.com/rss/section/sports
+  http://outlookindia.com/rss/section/books
+  http://outlookindia.com/rss/section/business
+  http://outlookindia.com/rss/main/magazine
+  http://outlookindia.com/rss/main/olt
+  http://outlookindia.com/rss/main/olb
+  http://outlookindia.com/rss/main/olp
+  http://outlookindia.com/rss/main/olm
+  http://outlookindia.com/rss/main/wires
+  http://outlookindia.com/rss/main/web
+end
+
+define sources {indiaToday.feeds}
+  http://indiatoday.intoday.in/rss/article.jsp?sid=41
+  http://indiatoday.intoday.in/rss/article.jsp?sid=27
+  http://indiatoday.intoday.in/rss/article.jsp?sid=36
+  http://indiatoday.intoday.in/rss/article.jsp?sid=4
+  http://indiatoday.intoday.in/rss/article.jsp?sid=30
+  http://indiatoday.intoday.in/rss/issue.jsp
+  http://indiatoday.intoday.in/rss/article.jsp?sid=34
+  http://indiatoday.intoday.in/rss/article.jsp?sid=2
+  http://indiatoday.intoday.in/rss/article.jsp?sid=146
+  http://indiatoday.intoday.in/rss/article.jsp?sid=24
+  http://indiatoday.intoday.in/rss/article.jsp?sid=61
+  http://indiatoday.intoday.in/rss/article.jsp?sid=25
+  http://indiatoday.intoday.in/rss/article.jsp?sid=21
+end
+
+define sources {frontline.feeds}
+  http://newsrack.in/crawled.feeds/frontline.rss.xml
+  http://www.frontline.in/?service=rss
+  http://www.frontline.in/the-nation/?service=rss
+  http://www.frontline.in/columns/Jayati_Ghosh/?service=rss
+  http://www.frontline.in/columns/K_Satchidanandan/?service=rss
+  http://www.frontline.in/social-issues/general-issues/?service=rss
+  http://www.frontline.in/environment/?service=rss
+  http://www.frontline.in/science-and-technology/?service=rss
+  http://www.frontline.in/cover-story/?service=rss
+  http://www.frontline.in/columns/?service=rss
+  http://www.frontline.in/social-issues/social-justice/?service=rss
+  http://www.frontline.in/arts-and-culture/cinema/?service=rss
+  http://www.frontline.in/arts-and-culture/music/?service=rss
+  http://www.frontline.in/world-affairs/?service=rss
+  http://www.frontline.in/environment/wild-life/?service=rss
+  http://www.frontline.in/books/?service=rss
+  http://www.frontline.in/other/data-card/?service=rss
+  http://www.frontline.in/other/letters/?service=rss
+  http://www.frontline.in/other/obituary/?service=rss
+  http://www.frontline.in/other/sport/?service=rss
+  http://www.frontline.in/magazine/?service=rss
+  http://www.frontline.in/columns/C_P_Chandrasekhar/?service=rss
+  http://www.frontline.in/columns/Sashi_Kumar/?service=rss
+  http://www.frontline.in/social-issues/?service=rss
+  http://www.frontline.in/arts-and-culture/art/?service=rss
+  http://www.frontline.in/arts-and-culture/literature/?service=rss
+  http://www.frontline.in/economy/?service=rss
+  http://www.frontline.in/arts-and-culture/?service=rss
+  http://www.frontline.in/environment/conservation/?service=rss
+  http://www.frontline.in/politics/?service=rss
+  http://www.frontline.in/arts-and-culture/heritage/?service=rss
+end
+
+define sources {tehelka.feeds}
+  http://www.tehelka.com/?feed=custom_feed
+  http://www.tehelka.com/category/current-affairs/?feed=custom_feed
+  http://www.tehelka.com/category/commentary/?feed=custom_feed
+  http://www.tehelka.com/category/culture/?feed=custom_feed
+  http://www.tehelka.com/category/tehelkadaily/?feed=custom_feed
+  http://www.tehelka.com/economy/?feed=custom_feed
+  http://www.tehelka.com/environment/?feed=custom_feed
+  http://www.tehelka.com/investigations/?feed=custom_feed
+  http://www.tehelka.com/international/?feed=custom_feed
+  http://www.tehelka.com/gujarat/?feed=custom_feed
+  http://www.tehelka.com/naxal/?feed=custom_feed
+  http://www.tehelka.com/jammu-kashmir/?feed=custom_feed
+  http://www.tehelka.com/northeast/?feed=custom_feed
+  http://www.tehelka.com/art/?feed=custom_feed
+  http://www.tehelka.com/books/?feed=custom_feed
+  http://www.tehelka.com/cinema/?feed=custom_feed
+  http://www.tehelka.com/music/?feed=custom_feed
+  http://www.tehelka.com/society/?feed=custom_feed
+end
+
+define sources {theWeek.feeds}
+  http://rssa.at/theweek?referer=&format=xml
+  http://rssa.at/theweek3927?referer=&format=xml
+  http://rssa.at/theweek3929?referer=&format=xml
+  http://rssa.at/theweek3931?referer=&format=xml
+  http://rssa.at/theweek3933?referer=&format=xml
+  http://rssa.at/theweek3936?referer=&format=xml
+  http://rssa.at/theweek3937?referer=&format=xml
+  http://rssa.at/theweek3938?referer=&format=xml
+  http://rssa.at/theweek3939?referer=&format=xml
+end
+
+define sources {OPEN.feeds} 
+  http://www.openthemagazine.com/rss/politics
+  http://www.openthemagazine.com/rss/society
+  http://www.openthemagazine.com/rss/culture
+  http://www.openthemagazine.com/rss/literature
+  http://www.openthemagazine.com/rss/essays/others
+  http://www.openthemagazine.com/rss/open-essays
+  http://www.openthemagazine.com/rss/true-life
+  http://www.openthemagazine.com/rss/arts-letters
+end
+
+define sources {theForbes.feeds}
+  http://www.forbesindia.com/rss/
+end
+
+define sources {epw.feeds}
+  http://rssa.at/www3953?referer=&format=xml
+  http://rssa.at/www3956?referer=&format=xml
+end
+
+define sources {businessToday.feeds}
+  http://www.businesstoday.in/rssFeed.jsp
+end
+
+define sources {iihs_english_magazine_sources_v2}
+  {downToEarth.feeds}, {outlook.feeds}, {indiaToday.feeds}, {frontline.feeds}, {tehelka.feeds}, {OPEN.feeds}, {theWeek.feeds}, {theForbes.feeds}, {epw.feeds}, {businessToday.feeds}
+end
+
+define sources {iihs_sources_v2}
+  {iihs_english_news_sources_v2}, {iihs_english_magazine_sources_v2}
+end
