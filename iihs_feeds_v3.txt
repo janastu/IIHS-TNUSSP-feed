@@ -1,0 +1,96 @@
+import sources {iihs_sources_v3} from servelots
+
+define concepts {water.v2}
+    <water> = water
+    <water-supply> = municipal water, water supply, supply of water, water supplier, water service, water utility, water provision
+    <privatisation> = privatisation, privatization, privatised, privatized, privatising, privatizing
+    <infrastructure> = water infrastructure, water system, water lines, water pipeline, overhead tank, water tap, water distribution, distribution network, pump mains
+    <water-sector> = water sector
+    <reforms> = reform, reforming, restructuring
+    <recycling> = recycling, recycle, recycled
+    <conservation> = conservation
+    <rwhchannel_rainwater> = rain-water harvesting, rain water harvesting, harvesting rain-water, harvest rain-water
+    <groundwater> = ground-water, aquifer, water table, sand mining
+    <recharge> = bore-well-recharge, well-recharge, recharge-well, recharge-pit
+    <aquaculture> = aquaculture, pisciculture
+    <dryland> = drylands, dryland farming
+    <drought> = droughts, drought-prone
+    <agrichannel_irrigation> = irrigation
+    <SRI> = system of rice intensification
+    <crops> = rice, wheat, millet, sugar-cane, cotton, jowar, bajra, ragi, horticulture, floriculture
+    <crop_match> = village, field , agriculture, growth
+    <waterborne> = water-borne
+    <disease> = typhoid, diarrhoea, cholera, "E.-Coli", Cryptosporidium, Escherichia, Hepatitis A, worms, guinea-worm, gastroenteritis
+    <rws> = rural water supply, rural water, hand pumps, hand-pumps
+    <drinkingwater_govt> = swajaldhara, jal nirmal, suvarna jala, sachetana,accelerated rural water supply programme,rajiv gandhi national drinking water mission, RGNDWM
+    <drinkingwater_misc> = freshwater, drinking water standards, "10500:1991", water treatment, water filtration, purification, salinity, desalination, hardness, bottled water, bore-well, tube-well, lpcd, litres per capita, liters per capita
+    <waterbodies_misc> = lake, cheruvu, johad, khadin, kundi, tanka, talab, talaab, dug-well, open-well, lake, ponds, pukar
+    <waterbodies_misc_match> = restoration, fish poisoning
+    <tank> = tank
+    <tank_match> = village, pond, rural, lake
+    <waterbodylist> = begum talab, vembanad lake, pulicat lake, kolleru lake, punnamada lake, berijam lake, ulsoor lake
+    <ufw> = unaccounted-for, non-revenue
+    <urban_water>=dual piping, piped water supply, safai karamchari
+    <urbanwater_govt>=jnnurm, urban development
+    <urbanwater_govt_match> = water supply, sewage, sewerage, lake restoration
+    <boards> = delhi jal board, BWSSB, Metrowater, HMWSSB, Lake Development Authority, Karnataka Urban water supply and drainage board
+    <urbanlakes> = hussain sagar, ulsoor lake, sankey tank, bellandur lake, madivala tank, madivala lake
+    <metro_match> = sewage, drains, pipelines, stormwater
+    <metros> = new delhi, mumbai, chennai, kolkata, chennai, hyderabad, bangalore, ahmedabad, guwahati, indore, nagpur
+    <watershed> = watershed-development
+    <watershed_structs> = check-dam, contour trench, earthen bund, percolation pond
+    <watershed_govt> = nrega, dpap, dwma, hariyali, neeranchal
+    <watershed_cases> = hiware bazaar, sukhomajri, ralegaon siddhi
+    <sanitation_govt> = nirmal gram, total sanitation campaign, sampoorn swacchtha, ngp, tsc
+    <sanitation_misc> = community-led total sanitation, scavenging, nightsoil
+    <ecosan> = ecological sanitation, eco-san, ecosan, dry toilet, composting toilet
+    <toilets> = twin-pit, single-pit, waterless urinal
+    <fl_as_ni> = arsenic, fluoride, arsenicosis, fluorosis, blue-baby, nitrate, defluoridation
+    <bacteria> = bacteriological contamination, faecal coliform
+    <OD> = biological oxygen, chemical oxygen, bod, cod
+    <filtration> = UV-treated, reverse osmosis, ozonised, ozonized, chlorination, water purification, bacteria-free, water filter
+    <waterquality_misc> = drinking water standards, "10500:1991", water treatment, water filtration, purification, salinity, desalination
+    <waterquality_govt> = cpcb, central pollution control board
+    <wastewater> = sewage treatment, yelahanka treatment plant, activated sludge, membrane bio-reactor, upward anerobic sludge blanket, sequential bio-reactor, soil bio-technology
+    <industry> = ion exchange, doshion, eureka forbes, thermax, cii, confederation of indian industry, federation of indian chambers of commerce and industry, ficci
+    <climate> = climate change, global warming, cop15, conference of parties, unfccc, kyoto agreement, kyoto protocol, inter-governmental panel on climate change, ipcc, igpcc, Berlin Mandate, National Action Plan on Climate Change, Marrakech Accords, Bali Action Plan, carbon fertilisation, Thermo Haline Circulation, Sea Level Rise, Nationally Appropriate Mitigation Actions, Carbon Sinks, Climate Adaptation, Climate Agreements, Climate Economics, Climate Equity, Climate Impacts, Climate Mitigation, Climate Science, Emissions Trading, Carbon Capture and Storage, Brown cloud
+    <climate_people> = al gore, shyam saran, R.K. Pachauri, Ajay Mathur, Prodipto Ghosh
+    <glaciers> = gangotri, yamunotri, glacier
+    <glacier_match> = receding, melting
+    <river> = river, tributary
+    <dam> = dam, reservoir, mega-dam
+    <hydel> = hydel, hydel-power, hydro-power, hydel project, hydro project, hydro-electric, hydro-electricity
+    <rivers_misc> = ganga action plan, yamuna action plan, G.D.Agrawal, krishna river disputes tribunal, cauvery water disputes tribunal
+    <sand_mining> = sand-mining
+    <irrigation> = irrigation, canal
+    <pollution> = pollution, contamination, adulteration, poisoning, toxic spill
+    <ocean> = coastal management zone, coastal regulatory zone
+    <mangroves> = mangroves
+    <chikungunya> = chikungunya
+    <floods_2009> = flood, floods
+end concepts
+
+define issue iihs_feeds_v3
+    monitor sources {iihs_sources_v3} organize news into categories
+    {
+      [All-Channels]= {
+        [Rainwater Harvesting]= rwhchannel_rainwater
+        [Groundwater Manangement]=(groundwater) OR (recharge AND water)
+        [Agriculture] = aquaculture OR (dryland AND water AND crop_match) OR ( drought AND water AND crop_match) OR (agrichannel_irrigation AND water) OR ( SRI ) OR (crops AND crop_match AND water)
+        [DrinkingWater] = rws OR drinkingwater_govt OR (water AND drinkingwater_misc) OR ((water OR waterborne) AND disease)
+        [WaterBodies] = (waterbodies_misc AND waterbodies_misc_match AND water) OR (tank AND tank_match AND water ) OR (urbanlakes and water) OR ( waterbodylist AND water )
+        [UrbanWater] = (ufw AND water) OR (urban_water AND water) OR (urbanwater_govt AND urbanwater_govt_match AND water) OR boards OR (metros AND metro_match) OR (urbanlakes AND water)
+        [Watershed_Devt] = watershed OR watershed_structs OR watershed_cases OR watershed_govt
+        [Sanitation] = sanitation_govt OR sanitation_misc OR ecosan OR toilets
+        [WaterQuality] = (fl_as_ni AND water) OR bacteria OR OD OR filtration OR waterquality_misc OR (waterquality_govt AND water )
+        [WasteWater] = wastewater
+        [Climate] = (climate AND water) OR ( climate_people AND water )
+        [Industry] = industry AND water
+        [Rivers] = rivers_misc OR (dam and river) OR (hydel AND river) OR (irrigation and river) OR (pollution AND river) OR (sand_mining AND river)
+        [WaterGeneral] = water-supply OR (water AND infrastructure) OR (water AND privatisation) OR (water-sector AND reforms) OR (water AND recycling) OR (water AND conservation) OR (ocean) OR (mangroves)
+      }
+      [Chikungunya] = chikungunya
+      [Floods2009]= floods_2009
+      [Main-Portal-Feed] = rwhchannel_rainwater OR (groundwater) OR (recharge AND water) OR aquaculture OR (dryland AND water AND crop_match) OR ( drought AND water AND crop_match) OR (agrichannel_irrigation AND water) OR ( SRI ) OR (crops AND crop_match AND water) OR rws OR drinkingwater_govt OR (water AND drinkingwater_misc) OR ((water OR waterborne) AND disease) OR (waterbodies_misc AND waterbodies_misc_match AND water) OR (tank AND tank_match AND water ) OR (urbanlakes and water) OR ( waterbodylist AND water ) OR (ufw AND water) OR (urban_water AND water) OR (urbanwater_govt AND _urbanwater_govt_match AND water) OR boards OR (metros AND metro_match) OR (urbanlakes AND water) OR watershed OR watershed_structs OR watershed_cases OR watershed_govt OR sanitation_govt OR sanitation_misc OR ecosan OR toilets OR (fl_as_ni AND water) OR bacteria OR OD OR filtration OR waterquality_misc OR (waterquality_govt AND water ) OR wastewater OR (climate AND water) OR ( climate_people AND water ) OR (industry AND water) OR rivers_misc OR (dam and river) OR (hydel AND river) OR (irrigation and river) OR (pollution AND river) OR (sand_mining AND river)
+    }
+end
