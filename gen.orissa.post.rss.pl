@@ -164,7 +164,7 @@ while (@urlList) {
 ## newspapers.
 ##
       ## The next line uses information about Jaya News Live URL structure
-   if ($url =~ m{/\w+}) {
+   if ($url =~ m{$defSiteRoot/\w+}) {
 			# For most sites, the next line suffices!
       $artNum = $1;
 		print "Article number = $artNum\n";
