@@ -129,11 +129,11 @@ sub ProcessPage
 ## newspaper depending on how their site is structured.
 ##
 
-$newspaper   = "Orissa Post";
-$prefix      = "Orissa.post";
-$defSiteRoot = "http://www.orissapost.com/";
+$newspaper   = "Orrisa Post";
+$prefix      = "orrisa.post";
+$defSiteRoot = "http://www.orissapost.com";
 $startPage   = "$defSiteRoot/";
-$artnum1     = &OpenArtNumFile("30000");
+$artnum1     = &OpenArtNumFile("20000");
 
 ##
 ## END CUSTOM CODE 1
@@ -141,19 +141,21 @@ $artnum1     = &OpenArtNumFile("30000");
 
 ## Initialize
 &Initialize("", $startPage);
-
 ## Process the url list while crawling the site
 while (@urlList) {
    $total++;
+   print join(", ", @urlList);
    $url = shift @urlList;
+   print "Currently processing url is..: $url\n";
    next if ($urlMap{$url});       # Skip if this URL has already been processed;
-   next if (! ($url =~ /http/i)); # Skip if this URL is not valid
+   next if (!($url =~ /http/i)); # Skip if this URL is not valid
 
-      # Get the new page and process it
+   # Get the new page and process it
    $processed++;
    print     "PROCESSING $url ==> $links{$url}\n";
    print LOG "PROCESSING $url ==> $links{$url}\n";
    $urlMap{$url} = $url;
+   print "hurrrrrrr";
 
 ##
 ## BEGIN CUSTOM CODE 2: This section needs to be customized for every
@@ -164,8 +166,9 @@ while (@urlList) {
 ## newspapers.
 ##
       ## The next line uses information about Jaya News Live URL structure
-   if ($url =~ m{$defSiteRoot/\w+}) {
+   if ($url =~ m{$defSiteRoot/\w+})  {
 			# For most sites, the next line suffices!
+      print "hurray";
       $artNum = $1;
 		print "Article number = $artNum\n";
 		next if ($artNum < $startingArtNum);
@@ -183,7 +186,7 @@ while (@urlList) {
       $desc  = $title;
 		&PrintRSSItem();
    }
-   elsif ($url =~ $startPage || $url =~ m{/category/\d/}) {
+   elsif ($url =~ $startPage) {
 		&CrawlWebPage($url);
    }
 }
