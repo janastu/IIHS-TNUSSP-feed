@@ -129,11 +129,11 @@ sub ProcessPage
 ## newspaper depending on how their site is structured.
 ##
 
-$newspaper   = "Sangai Express";
-$prefix      = "sangai.express";
-$defSiteRoot = "http://www.thesangaiexpress.com";
+$newspaper   = "Imphal Free Press";
+$prefix      = "ifp";
+$defSiteRoot = "http://ifp.co.in";
 $startPage   = "$defSiteRoot/";
-$artnum1     = &OpenArtNumFile("600000");
+$artnum1     = &OpenArtNumFile("30000");
 
 ##
 ## END CUSTOM CODE 1
@@ -164,8 +164,7 @@ while (@urlList) {
 ## newspapers.
 ##
       ## The next line uses information about Jaya News Live URL structure
-   if ($url =~ m{$defSiteRoot/\w+}) {
-     print ".................................\n";
+   if ($url =~ m{/page/items/(\d+)/}) {
 			# For most sites, the next line suffices!
       $artNum = $1;
 		print "Article number = $artNum\n";

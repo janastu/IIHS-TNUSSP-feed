@@ -7,18 +7,50 @@ if (!$scriptDir) {
 }
 require "$scriptDir/crawler.lib.pl";
 
+%artSections = (
+   "181"  => "1", ## regular
+   "5922" => "1",	## print edition
+);
+
+%skipSections = (
+   "420"  => "1",	## photos
+   "886"  => "1",	## tabloid
+   "901"  => "1",	## chat
+   "945"  => "1",	## discuss
+   "1011" => "1", ## About us
+   "1019" => "1", ## About us
+   "1035" => "1", ## Contact us
+   "1040" => "1",
+   "1043" => "1",
+   "1046" => "1",
+   "1050" => "1",
+   "1055" => "1", ## FAQs
+   "1238" => "1",	## archives
+   "2031" => "1", ## hindustan dainik
+   "2045" => "1", ## hindustan dainik
+   "2054" => "1",	## cinema
+   "2225" => "1", ## hindustan dainik
+   "5704" => "1",	## image galleries
+   "5926" => "1",	## weekly scan
+   "6225" => "1", ## party zone
+   "6226" => "1", ## leisure
+   "6230" => "1", ## wheels
+   "6413" => "1", ## ht specials
+   "6475" => "1", ## specials
+   "6496" => "1", ## ht specials
+   "7703" => "1",	## videos
+);
+
 # -- Process a downloaded page
 sub ProcessPage
 {
    my ($fileName, $url) = ($_[0], $_[1]);
    ($baseHref) = ($url =~ m{(http://.*?)(\/[^/]*)?$}i);
-   ($baseHref2) = ($url =~ m{(http://[^/]*)(.*)?$}i);
    $baseHref .= "/";
-   $baseHref2 .= "/";
+	$siteRoot = $defSiteRoot;
    print LOG "URL               - $url\n";
    print LOG "FILE              - $fileName\n";
    print LOG "DEFAULT BASE HREF - $baseHref\n";
-   print LOG "DEFAULT BASE HREF 2 - $baseHref2\n";
 
       # Suck in the entire file into 1 line
    $x=$/;
@@ -42,9 +74,6 @@ sub ProcessPage
       print LOG "BASE HREF         - $baseHref\n";
       ($siteRoot) = $1.$2 if ($baseHref =~ m{(http://)?([^/]*)}i);
       print LOG "SITE ROOT         - $siteRoot\n";
-   }
-   else {
-      $siteRoot = $defSiteRoot;
    }
 
       # Check if absolute URLs are okay with this page 
@@ -75,26 +104,42 @@ sub ProcessPage
          $msg    = "-http-";
          $ignore = 1;
       }
-      elsif ($urlRef =~ m{^/}) {
+      elsif ($rejectAbsoluteUrls && ($urlRef =~ /^\//)) {
          $newUrl = $siteRoot.$urlRef;
-			if ($rejectAbsoluteUrls) {
+			if (!($urlRef =~ m{^/news/})) {
 				$msg    = "-ABSOLUTE-";
 				$ignore = 1;
 			}
       }
       elsif ($urlRef =~ /^\.\./) {
-			$newUrl = $baseHref.$urlRef;
-			$msg    = "-..-";
-			$ignore = 1;
+         $newUrl = $baseHref.$urlRef;
+         $msg    = "-..-";
+         $ignore = 1;
       }
       elsif ($urlRef =~ /^mailto/i) {
          $newUrl = $urlRef;
          $msg    = "-mailto-";
          $ignore = 1;
       }
+		elsif ($urlRef =~ m{/news/}) {
+			if ($urlRef =~ m{/news/\d+}) {
+         	$newUrl = $baseHref.$urlRef;
+			}
+			else {
+				$newUrl = $baseHref.$urlRef;
+				$msg    = "Uninteresting news index";
+				$ignore = 1;
+			}
+		}
       else {
          $newUrl = $baseHref.$urlRef;
       }
+
+			# Special check for uninteresting news indexes
+		if ($newUrl =~ m{/news/\D+}) {
+			$msg    = "Uninteresting news index";
+			$ignore = 1;
+		}
 
       ($newUrl =~ s{://}{###}g); 
       ($newUrl =~ s{//}{/}g); 
@@ -104,16 +149,11 @@ sub ProcessPage
       if ($ignore) {
          print LOG "IGNORING NEW ($msg) - $newUrl\n"
       }
-      elsif (!($newUrl =~ /.*\s*#$/)) {
+      elsif (!($newUrl =~ /.*\s*#$/) && !$links{$newUrl}) {
          $link =~ s/\s+/ /g;
          print LOG "ADDING NEW - $newUrl\n";
-			if ($links{$newUrl} && ($link =~ /full story/i)) {
-				print LOG "Skipping already existing link - $link; $newUrl\n";
-			}
-			else {
-				$urlList[scalar(@urlList)] = $newUrl; 
-				$links{$newUrl} = $link;
-			}
+         $urlList[scalar(@urlList)] = $newUrl; 
+         $links{$newUrl} = $link;
       }
    }
 
@@ -129,18 +169,18 @@ sub ProcessPage
 ## newspaper depending on how their site is structured.
 ##
 
-$newspaper   = "Sangai Express";
-$prefix      = "sangai.express";
-$defSiteRoot = "http://www.thesangaiexpress.com";
-$startPage   = "$defSiteRoot/";
-$artnum1     = &OpenArtNumFile("600000");
+$newspaper   = "Hindustan Times";
+$prefix      = "ht";
+$defSiteRoot = "http://www.hindustantimes.com";
+$url         = "$defSiteRoot/news/124_0,0000.htm";
+$artnum1     = &OpenArtNumFile("180000");
 
 ##
 ## END CUSTOM CODE 1
 ##
 
 ## Initialize
-&Initialize("", $startPage);
+&Initialize("", $url);
 
 ## Process the url list while crawling the site
 while (@urlList) {
@@ -148,6 +188,7 @@ while (@urlList) {
    $url = shift @urlList;
    next if ($urlMap{$url});       # Skip if this URL has already been processed;
    next if (! ($url =~ /http/i)); # Skip if this URL is not valid
+   next if ($url =~ /#/); 		 	 # Skip if this URL is a javascript link
 
       # Get the new page and process it
    $processed++;
@@ -163,30 +204,39 @@ while (@urlList) {
 ## structure and organization and needs to be customized for different
 ## newspapers.
 ##
-      ## The next line uses information about Jaya News Live URL structure
-   if ($url =~ m{$defSiteRoot/\w+}) {
-     print ".................................\n";
-			# For most sites, the next line suffices!
-      $artNum = $1;
-		print "Article number = $artNum\n";
+      # The next line uses information about Hindustan Times site organization
+		# All news items have the url structure:
+		# http://www.hindustantimes.com/news/181_....htm   <-- Web edition
+		# http://www.hindustantimes.com/news/5299_....htm  <-- online edition
+	($secNum, $artNum) = ($1, $2) if ($url =~ m{/news/(\d+)_(\d+),.*});
+   if ($artSections{$secNum}) {
+		print LOG "Article number = $artNum; Sec num - $secNum\n";
 		next if ($artNum < $startingArtNum);
 
-		if ($artNum > $maxArtNum) {
+			## Skip spurious updates to the max art. number
+		if (($artNum > $maxArtNum) && (($artNum - $maxArtNum) < 10000)) {
 			$maxArtNum = $artNum;
 		}
-
-		$title = $links{$url};
 ##
 ## END CUSTOM CODE 2
 ##
-		$title =~ s/<.*?>//g;
-		print "TITLE of $url is \'$title\'\n";
-      $desc  = $title;
+
+      $title = $links{$url};
+		if (($title =~ /more/) || ($title =~ m{<.*>.*</.*>}) || ($title =~ m{</.*>.*<.*>})) {
+      	$title = &ReadTitle($url);
+			$title =~ s/\s*:\s*Hindustantimes.com//i;
+		}
+      $desc = $title;
+		print LOG "ADD-TO-RSS: Article number = $artNum; Sec num - $secNum\n";
 		&PrintRSSItem();
    }
-   elsif ($url =~ $startPage || $url =~ m{/category/\d/}) {
+   elsif (($artNum ==0) && (!$skipSections{$secNum})) {
 		&CrawlWebPage($url);
    }
+	else {
+		print "Skipping $url\n";
+		print LOG "Skipping $url\n";
+	}
 }
 
 &FinalizeRSSFeed();

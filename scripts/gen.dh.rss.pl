@@ -12,13 +12,10 @@ sub ProcessPage
 {
    my ($fileName, $url) = ($_[0], $_[1]);
    ($baseHref) = ($url =~ m{(http://.*?)(\/[^/]*)?$}i);
-   ($baseHref2) = ($url =~ m{(http://[^/]*)(.*)?$}i);
    $baseHref .= "/";
-   $baseHref2 .= "/";
-   print LOG "URL               - $url\n";
-   print LOG "FILE              - $fileName\n";
-   print LOG "DEFAULT BASE HREF - $baseHref\n";
-   print LOG "DEFAULT BASE HREF 2 - $baseHref2\n";
+#   print "URL               - $url\n";
+#   print "FILE              - $fileName\n";
+#   print "DEFAULT BASE HREF - $baseHref\n";
 
       # Suck in the entire file into 1 line
    $x=$/;
@@ -39,9 +36,9 @@ sub ProcessPage
       # Process base href declaration
    if ($content =~ m{base\s+href=(["|']?)([^'"]*/)[^/]*\1}i) {
       ($baseHref) = $2;
-      print LOG "BASE HREF         - $baseHref\n";
-      ($siteRoot) = $1.$2 if ($baseHref =~ m{(http://)?([^/]*)}i);
-      print LOG "SITE ROOT         - $siteRoot\n";
+#      print "BASE HREF         - $baseHref\n";
+#      ($siteRoot) = $1.$2 if ($baseHref =~ m{(http://)?([^/]*)}i);
+#      print "SITE ROOT         - $siteRoot\n";
    }
    else {
       $siteRoot = $defSiteRoot;
@@ -54,9 +51,9 @@ sub ProcessPage
    my $urlList = ();
 
       # Match anchors -- across multiple lines, and match all instances
-   while ($content =~ m{<a.*?href\s*=\s*(['|"]?)([^ '"<>]+)\1.*?>(.+?)</a>}isg) {
+   while ($content =~ m{<a.*?href\s*=\s*(['|"]?)([^ "'<>]+)\1.*?>(.+?)</a>}isg) {
       ($urlRef, $link) = ($2, $3);
-      print LOG "REF - $urlRef; LINK - $link; "; 
+#     print LOG "REF - $urlRef; LINK - $link; "; 
       $msg="";
       $ignore = 0;
          # Check this before the "^http" check because
@@ -83,9 +80,17 @@ sub ProcessPage
 			}
       }
       elsif ($urlRef =~ /^\.\./) {
-			$newUrl = $baseHref.$urlRef;
-			$msg    = "-..-";
-			$ignore = 1;
+         $nu = $baseHref.$urlRef;
+         $b = $1 if ($baseHref =~ m{(.*/)(.+)/?});
+         $u = $1 if ($urlRef =~ m{\.\./(.*)});
+         $newUrl = $b.$u;
+         if ($newUrl =~ m{$defSiteRoot}i) {
+            $ignore = 0;
+         }
+         else {
+            $msg    = "-..-";
+            $ignore = 1;
+         }
       }
       elsif ($urlRef =~ /^mailto/i) {
          $newUrl = $urlRef;
@@ -104,16 +109,11 @@ sub ProcessPage
       if ($ignore) {
          print LOG "IGNORING NEW ($msg) - $newUrl\n"
       }
-      elsif (!($newUrl =~ /.*\s*#$/)) {
+      elsif (!($newUrl =~ /.*\s*#$/) && !$links{$newUrl}) {
          $link =~ s/\s+/ /g;
          print LOG "ADDING NEW - $newUrl\n";
-			if ($links{$newUrl} && ($link =~ /full story/i)) {
-				print LOG "Skipping already existing link - $link; $newUrl\n";
-			}
-			else {
-				$urlList[scalar(@urlList)] = $newUrl; 
-				$links{$newUrl} = $link;
-			}
+         $urlList[scalar(@urlList)] = $newUrl; 
+         $links{$newUrl} = $link;
       }
    }
 
@@ -128,24 +128,36 @@ sub ProcessPage
 ## BEGIN CUSTOM CODE 1: This section needs to be customized for every
 ## newspaper depending on how their site is structured.
 ##
-
-$newspaper   = "Sangai Express";
-$prefix      = "sangai.express";
-$defSiteRoot = "http://www.thesangaiexpress.com";
-$startPage   = "$defSiteRoot/";
-$artnum1     = &OpenArtNumFile("600000");
-
+$newspaper          = "Deccan Herald";
+$prefix             = "dh";
+## Sometimes, the URL structure for the site has the date string in it
+$date               = `date -R`;
+($day, $mon, $year) = ($date =~ /.*, 0*(\d+) (\w+) (\d+) .*/);
+$mon                = lcfirst $mon;
+$urlDateString      = "$mon$day$year";
+#$urlDateString      = "jun102008";
+$defSiteRoot        = "http://www.deccanherald.com/Content/$urlDateString";
+$url                = "$defSiteRoot/index.asp";
 ##
 ## END CUSTOM CODE 1
 ##
 
 ## Initialize
-&Initialize("", $startPage);
+&Initialize("", $url);
+#&Initialize("", $url, "Tue, 10 Jun 2008 06:43:49 +0530");
+
+## Add any additional urls in addition to the root URL
+## this is necessary for Deccan Herald, for instance
+$altRootUrl = "$defSiteRoot/update.asp"; ## Alternative ROOT URL
+$urlList[1] = $altRootUrl;
+$links{$altRootUrl} = "ALT ROOT";
+print "ALT ROOT URL - $altRootUrl\n";
 
 ## Process the url list while crawling the site
 while (@urlList) {
    $total++;
    $url = shift @urlList;
+   $url =~ s/\?.*//g;             # Get rid of marker params
    next if ($urlMap{$url});       # Skip if this URL has already been processed;
    next if (! ($url =~ /http/i)); # Skip if this URL is not valid
 
@@ -163,32 +175,22 @@ while (@urlList) {
 ## structure and organization and needs to be customized for different
 ## newspapers.
 ##
-      ## The next line uses information about Jaya News Live URL structure
-   if ($url =~ m{$defSiteRoot/\w+}) {
-     print ".................................\n";
+      # The next line uses information about Deccan's site organization
+   if ($url =~ m{$defSiteRoot/\w+\d+.asp}i) {
 			# For most sites, the next line suffices!
-      $artNum = $1;
-		print "Article number = $artNum\n";
-		next if ($artNum < $startingArtNum);
-
-		if ($artNum > $maxArtNum) {
-			$maxArtNum = $artNum;
-		}
-
-		$title = $links{$url};
+      $title = $links{$url};
 ##
 ## END CUSTOM CODE 2
 ##
 		$title =~ s/<.*?>//g;
-		print "TITLE of $url is \'$title\'\n";
+		print "TITLE of $url is $title\n";
       $desc  = $title;
 		&PrintRSSItem();
    }
-   elsif ($url =~ $startPage || $url =~ m{/category/\d/}) {
+   else {
 		&CrawlWebPage($url);
    }
 }
 
 &FinalizeRSSFeed();
-&SaveArtNumFile();
 &PrintStatsAndCleanup();
